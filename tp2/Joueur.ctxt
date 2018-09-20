@@ -1,8 +1,9 @@
 #BlueJ class context
-comment0.params=c
-comment0.target=void\ jouerCarte(Carte)
-comment1.params=
-comment1.target=int\ getPv()
-comment2.params=i
-comment2.target=void\ setPv(int)
-numComments=3
+comment0.target=Joueur
+comment1.params=c
+comment1.target=void\ jouerCarte(Carte)
+comment2.params=
+comment2.target=int\ getPv()
+comment3.params=i
+comment3.target=void\ setPv(int)
+numComments=4

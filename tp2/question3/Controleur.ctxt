@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Controleur
-comment0.text=\r\n\ Decrivez\ votre\ classe\ Controleur\ ici.\r\n\ \r\n\ @author\ (votre\ nom)\ \r\n\ @version\ (un\ numero\ de\ version\ ou\ une\ date)\r\n
+comment0.text=\n\ Decrivez\ votre\ classe\ Controleur\ ici.\n\ \n\ @author\ (votre\ nom)\ \n\ @version\ (un\ numero\ de\ version\ ou\ une\ date)\n
 comment1.params=pile
 comment1.target=Controleur(PileModele)
 comment2.params=

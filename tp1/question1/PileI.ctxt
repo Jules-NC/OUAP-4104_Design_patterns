@@ -1,12 +1,13 @@
 #BlueJ class context
-comment0.params=o
-comment0.target=void\ empiler(java.lang.Object)
-comment1.params=
-comment1.target=java.lang.Object\ depiler()
+comment0.target=PileI
+comment1.params=o
+comment1.target=void\ empiler(java.lang.Object)
 comment2.params=
-comment2.target=boolean\ estVide()
+comment2.target=java.lang.Object\ depiler()
 comment3.params=
-comment3.target=boolean\ estPleine()
+comment3.target=boolean\ estVide()
 comment4.params=
-comment4.target=java.lang.String\ toString()
-numComments=5
+comment4.target=boolean\ estPleine()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

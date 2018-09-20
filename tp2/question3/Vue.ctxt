@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.params=pile
-comment0.target=Vue(PileModele<Integer>)
-comment1.params=obs\ arg
-comment1.target=void\ update(Observable,\ Object)
-numComments=2
+comment0.target=Vue
+comment0.text=\n\ Decrivez\ votre\ classe\ Controleur\ ici.\n\ \n\ @author\ (votre\ nom)\ \n\ @version\ (un\ numero\ de\ version\ ou\ une\ date)\n
+comment1.params=pile
+comment1.target=Vue(PileModele)
+comment2.params=obs\ arg
+comment2.target=void\ update(java.util.Observable,\ java.lang.Object)
+numComments=3

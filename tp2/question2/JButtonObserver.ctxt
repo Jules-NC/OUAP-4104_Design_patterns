@@ -1,8 +1,10 @@
 #BlueJ class context
-comment0.params=nom\ contenu
-comment0.target=JButtonObserver(java.lang.String,\ java.awt.TextArea)
-comment0.text=\r\n\ Constructeur\ d'objets\ de\ classe\ JButtonObserver\r\n
-comment1.params=
-comment1.target=void\ actionXXXXXXX()
-comment1.text=\ affichage\ d'un\ message\ dans\ la\ zone\ de\ texte\r\n\ ce\ message\ est\ de\ la\ forme\ observateur\ this.nom\ \:\ clic\ du\ bouton\ nom_du_bouton\r\n\ exemple\ \:\ observateur\ jbo1\ \:\ clic\ du\ bouton\ A\r\n\ @param\ ???\r\n
-numComments=2
+comment0.target=JButtonObserver
+comment0.text=\n\ Decrivez\ votre\ classe\ JButtonObserver\ ici.\n\ \n\ @author\ (votre\ nom)\ \n\ @version\ (un\ numero\ de\ version\ ou\ une\ date)\n
+comment1.params=nom\ contenu
+comment1.target=JButtonObserver(java.lang.String,\ java.awt.TextArea)
+comment1.text=\n\ Constructeur\ d'objets\ de\ classe\ JButtonObserver\n
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.text=\ affichage\ d'un\ message\ dans\ la\ zone\ de\ texte\n\ ce\ message\ est\ de\ la\ forme\ observateur\ this.nom\ \:\ clic\ du\ bouton\ nom_du_bouton\n\ exemple\ \:\ observateur\ jbo1\ \:\ clic\ du\ bouton\ A\n\ @param\ ???\n
+numComments=3

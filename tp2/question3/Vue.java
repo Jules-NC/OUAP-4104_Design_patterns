@@ -13,25 +13,22 @@ import java.util.Observer;
  * @author (votre nom) 
  * @version (un numero de version ou une date)
  */
-public class Vue extends JPanel
-{// à completer 
-  private JLabel etatPile;
-  private PileModele<Integer> pile;
+public class Vue extends JPanel implements Observer
+{// ? completer 
+    private JLabel etatPile;
+    private PileModele<Integer> pile;
 
-  public Vue( PileModele<Integer> pile )
-  {
-    super();
-    this.pile= pile;
-    this.etatPile= new JLabel( "entrez des nombres entiers" );
-    setLayout( new FlowLayout( FlowLayout.LEFT ) );
-    add( etatPile );
-    setBackground( Color.green );
-    // inscription aupres du modele comme observateur
-  } // Vue()
+    public Vue( PileModele<Integer> pile ){
+        super();
+        this.pile= pile;
+        this.etatPile= new JLabel( "entrez des nombres entiers" );
+        setLayout( new FlowLayout( FlowLayout.LEFT ) );
+        add( etatPile );
+        setBackground( Color.green );
+        pile.addObserver(this);
+    } // Vue()
 
-  public void update( Observable obs, Object arg )
-  {
-    etatPile.setText( pile.toString() ); // ou obs.toString()
-  } // update()
-
+    public void update( Observable obs, Object arg ){
+        etatPile.setText( pile.toString() ); // ou obs.toString()
+    } // update()
 } // Vue

@@ -5,56 +5,70 @@ import question3.tp_pile.PileVideException;
 import question3.tp_pile.PilePleineException;
 
 import java.util.Observable;
-public class PileModele<T> /* extends a completer */ implements PileI<T>
+
+import java.util.Observer;
+
+public class PileModele<T> extends Observable implements PileI<T>
 {
-  private PileI<T> pile;
+    private PileI<T> pile;
 
-  /* a completer */
+    /* a completer */
 
-  public PileModele( PileI<T> pile )
-  {
-    this.pile= pile;
-  } // PileModele()
+    public PileModele( PileI<T> pile )
+    {
+        this.pile= pile;
+    } // PileModele()
 
-  public void empiler( T o ) throws PilePleineException
-  {
-  } // empiler()
+    public void empiler( T o ) throws PilePleineException
+    {
+        pile.empiler(o);
+        this.setChanged();
+        this.notifyObservers();
+    } // empiler()
 
-  public T depiler() throws PileVideException
-  {
-    return null;
-  } // depiler()
+    public T depiler() throws PileVideException
+    {
+        return pile.depiler();
+    } // depiler()
 
-  public T sommet() throws PileVideException
-  {
-    return null;
-  } // sommet()
+    public T sommet() throws PileVideException
+    {
+        return pile.sommet();
+    } // sommet()
 
-  public int taille()
-  {
-    return pile.taille();
-  } // taille()
+    public int taille()
+    {
+        return pile.taille();
+    } // taille()
 
-  public int capacite()
-  {
-    return pile.capacite();
-  } // capacite()
+    public int capacite()
+    {
+        return pile.capacite();
+    } // capacite()
 
-  public boolean estVide()
-  {
-    return pile.estVide();
-  } // estVide()
+    public boolean estVide()
+    {
+        return pile.estVide();
+    } // estVide()
 
-  public boolean estPleine()
-  {
-    return pile.estPleine();
-  } // estPleine()
+    public boolean estPleine()
+    {
+        return pile.estPleine();
+    } // estPleine()
 
-  public String toString()
-  {
-    return pile.toString();
-  } // toString()
-  
+    public void vider(){
+        int n = pile.taille();
+        for(int i = 0; i<n; i++){
+            try{
+            pile.depiler();}catch(Exception e){}
+        }
+    }
+
+    public String toString()
+    {
+        return pile.toString();
+    } // toString()
+
 } // PileModele
 
 /** notez qu'un message d'alerte subsiste a la compilation (unsafe ...) 

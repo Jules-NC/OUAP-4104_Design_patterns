@@ -1,10 +1,11 @@
 #BlueJ class context
-comment0.params=
-comment0.target=int\ getAttaque()
+comment0.target=Carte
 comment1.params=
-comment1.target=int\ getPv()
-comment2.params=i
-comment2.target=void\ setPv(int)
-comment3.params=
-comment3.target=void\ interragir()
-numComments=4
+comment1.target=int\ getAttaque()
+comment2.params=
+comment2.target=int\ getPv()
+comment3.params=i
+comment3.target=void\ setPv(int)
+comment4.params=
+comment4.target=void\ interragir()
+numComments=5

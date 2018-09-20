@@ -1,10 +1,12 @@
 #BlueJ class context
-comment0.params=
-comment0.target=ConcreteObserver()
-comment1.params=observable\ arg
-comment1.target=void\ update(java.util.Observable,\ java.lang.Object)
-comment2.params=
-comment2.target=java.util.Stack\ senders()
+comment0.target=ConcreteObserver
+comment0.text=\n\ Decrivez\ votre\ classe\ ConcreteObserver\ ici.\n\ \n\ @author\ (votre\ nom)\ \n\ @version\ (un\ numero\ de\ version\ ou\ une\ date)\n
+comment1.params=
+comment1.target=ConcreteObserver()
+comment2.params=observable\ arg
+comment2.target=void\ update(java.util.Observable,\ java.lang.Object)
 comment3.params=
-comment3.target=java.util.Stack\ arguments()
-numComments=4
+comment3.target=java.util.Stack\ senders()
+comment4.params=
+comment4.target=java.util.Stack\ arguments()
+numComments=5
