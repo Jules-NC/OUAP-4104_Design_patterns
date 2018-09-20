@@ -67,6 +67,26 @@ public class Controleur extends JPanel
         return Integer.parseInt( donnee.getText() );
     } // operande()
 
+    public void actualiserIHM(){
+        if(pile.taille()<2){
+            this.push.setEnabled(true);
+            this.add.setEnabled(false);
+            this.sub.setEnabled(false);
+            this.mul.setEnabled(false);
+            this.div.setEnabled(false);
+
+        }
+        else{
+            this.push.setEnabled(false);
+            this.add.setEnabled(true);
+            this.sub.setEnabled(true);
+            this.mul.setEnabled(true);
+            this.div.setEnabled(true);
+
+        }
+
+    }
+
     // a completer
     // en cas d'exception comme division par zero, mauvais format de nombre
     // la pile doit rester en l'etat (intacte)
@@ -79,6 +99,7 @@ public class Controleur extends JPanel
             catch(PilePleineException ex){
                 System.out.println("ERREUR");
             }
+            actualiserIHM();
         }
     }
 
@@ -91,6 +112,7 @@ public class Controleur extends JPanel
             catch(Exception ex){
                 System.out.println("ERREUR");
             }
+            actualiserIHM();
         }
     }
 
@@ -103,6 +125,7 @@ public class Controleur extends JPanel
             catch(Exception ex){
                 System.out.println("ERREUR");
             }
+            actualiserIHM();
         }
     }
 
@@ -115,6 +138,7 @@ public class Controleur extends JPanel
             catch(Exception ex){
                 System.out.println("ERREUR");
             }
+            actualiserIHM();
         }
     }
 
@@ -128,6 +152,7 @@ public class Controleur extends JPanel
             catch(Exception ex){
                 System.out.println("ERREUR");
             }
+            actualiserIHM();
         }
     }
 
@@ -136,7 +161,7 @@ public class Controleur extends JPanel
 
             pile.vider();
             System.out.println(pile.taille());
-
+            actualiserIHM();
         }
     }
 } // Controleur
