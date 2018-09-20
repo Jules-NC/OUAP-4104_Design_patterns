@@ -71,8 +71,7 @@ public class Controleur extends JPanel
     // en cas d'exception comme division par zero, mauvais format de nombre
     // la pile doit rester en l'etat (intacte)
     class BoutonPushListener implements ActionListener{
-        public void actionPerformed(ActionEvent e){
-            if(pile.taille()<2) return;            
+        public void actionPerformed(ActionEvent e){       
             try{
                 pile.empiler(Integer.parseInt(donnee.getText()));
                 System.out.println(pile.taille());

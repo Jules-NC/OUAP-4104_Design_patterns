@@ -28,7 +28,10 @@ public class PileModele<T> extends Observable implements PileI<T>
 
     public T depiler() throws PileVideException
     {
-        return pile.depiler();
+        T t = pile.depiler();
+        this.setChanged();
+        this.notifyObservers();
+        return t;
     } // depiler()
 
     public T sommet() throws PileVideException
@@ -60,8 +63,12 @@ public class PileModele<T> extends Observable implements PileI<T>
         int n = pile.taille();
         for(int i = 0; i<n; i++){
             try{
-            pile.depiler();}catch(Exception e){}
+                pile.depiler();
+            }
+            catch(Exception e){}
         }
+        this.setChanged();
+        this.notifyObservers();
     }
 
     public String toString()
